@@ -1,35 +1,35 @@
 body {
-  background: silver;
+    background: silver;
 }
 
 h1 {
-  text-align: center;
+    text-align: center;
 }
 
-.forMeImg {
-  text-align: center;
+.my-img {
+    text-align: center;
 }
 
-.textMeBox{
-  font-family: RobotoLight, sans-serif;
-  text-align: center;
-  position: relative;
-  margin: auto;
-  padding: 10px;
-  width: 50%;
+.textMeBox {
+    font-family: RobotoLight, sans-serif;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    width: 50%;
 }
 
-.textTable{
-  text-align: justify;
-  padding: 5px;
+.textTable {
+    text-align: justify;
+    padding: 5px;
 }
 
-td{
-  vertical-align: top;
-  width: 50%;
+td {
+    vertical-align: top;
+    width: 50%;
 }
 
 .right {
-  text-align: right;
+    text-align: right;
 }
 
