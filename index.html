@@ -1,82 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Сайт-визитка</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body> 
 <header class="header">
-    <h1> Резюме </h1>
-    <div class="my-img">
-        <img src="img/MyPhoto.jpg" width="275" height="400" alt="Моё фото">
-    </div>
+  <h1 class="header__title"> Welcome to the resume site </h1>
+  <div class="photo">
+      <img class="photo__img" src="img/MyPhoto.jpg" alt="Моё фото">
+  </div>
 </header>
-<main>
-    <div class="textMeBox">
-        <table class="textTable">
-            <tr>
-                <td class="right">ФИО:</td>
-                <td>Рева Станислав Анатольевич</td>
-            </tr>
-            <tr>
-                <td class="right">Дата рождения:</td>
-                <td>3 марта 1995г</td>
-            </tr>
-            <tr>
-                <td class="right">ВКонтакте:</td>
-                <td><a href="https://vk.com/lord_welheor">https://vk.com/Lord_Welheor</a></td>
-            </tr>
-            <tr>
-                <td class="right">E-mail:</td>
-                <td><a href="mailto:RevaSA95@gmail.com">RevaSA95@gmail.com</a></td>
-            </tr>
-            <tr>
-                <td class="right">Образование:</td>
-                <td>Закончил Адыгейский Государственный Университет с красным дипломом бакалавра, специальность:
-                    Информатика
-                    и Вычислительная техника.
-                    В данный момент учусь в Южном Федеральном Университете, 1 курс магистратуры, специальность:
-                    Информационное и программное обеспечение автоматизированных систем.
-                </td>
-            </tr>
-            <tr>
-                <td class="right">Курсы по веб-разработке:</td>
-                <td><a href="https://www.sololearn.com/Certificate/1014-2013511/pdf/">Сертификат Sololearn Html</a><br>
-                    <a href="https://www.sololearn.com/Certificate/1024-2013511/pdf/">Сертификат Sololearn
-                        JavaScript</a><br>
-                    <a href="https://htmlacademy.ru/profile/id106318">Профиль на htmlAcademy</a>
-                </td>
-            </tr>
-            <tr>
-                <td class="right">Опыт работы с HTML/CSS/JS:</td>
-                <td>Есть не коммерческий опыт, готов учиться, учиться и ещё раз учиться</td>
-            </tr>
-            <tr>
-                <td class="right">Уровень английского:</td>
-                <td>Немного читать могу, готов параллельно учиться английскому<br>
-                    <a href="https://www.duolingo.com/Lord_Welheor">Duolingo 13 уровень, 49%</a>
-                </td>
-            </tr>
-            <tr>
-                <td class="right">Фронтэнд:</td>
-                <td>Очень интересно веб-программирование, хочу работать и развиваться в этой сфере</td>
-            </tr>
-            <tr>
-                <td class="right">Технологии:</td>
-                <td>С++, Java, Python, JavaScript, СУБД PostgreSQL</td>
-            </tr>
+  
+<main class="main">  
+  <h2 class="main__title">ФИО</h2>
+  <p class="main__description">
+    Рева Станислав Анатольевич
+  </p>
+  
+  <h2 class="main__title">Дата рождения</h2>
+  <p class="main__description">
+    3 марта 1995г.
+  </p>
+  
+  <h2 class="main__title">Образование</h2>
+  <p class="main__description">
+    Закончил Адыгейский Государственный Университет с красным дипломом бакалавра, специальность: "Информатика и Вычислительная техника".
+  </p>
+  <p class="main__description">
+    В 2017 году поступил в магистратуру Южного Федерального Университета по специальности: "Информационное и программное обеспечение автоматизированных систем".
+  </p>
+  
+  <h2 class="main__title">Опыт работы с HTML/CSS/JS</h2>
+  <p class="main__description">
+    Есть не коммерческий опыт, готов учиться, учиться и ещё раз учиться.
+  </p>
+  
+  <h2 class="main__title">Уровень английского</h2>
+  <p class="main__description">
+    Начальный, могу читать техническую литературу со словарём.
+  </p>
+  
+  <h2 class="main__title">Знаком с технологиями</h2>
+  <p class="main__description">
+    С++, JavaScript, Python, СУБД PostgreSQL, Git
+  </p>
 
-            <tr>
-                <td class="right">gh-pages:</td>
-                <td><a href="https://lordwelheor.github.io/The-Shop/">The shop</a></td>
-            </tr>
-        </table>
-    </div>
+  <h2 class="main__title">Почему фронтенд?</h2>
+  <p class="main__description">
+    Очень интересна веб-разработка, хочу работать и развиваться в этой сфере.
+  </p>
+  
+  <h2 class="main__title">Сертификаты</h2>
+  <ul class="list-links main__description">
+    <li class="list-links__item">
+      <a class="list-links__link"
+         href="https://www.sololearn.com/Certificate/1014-2013511/pdf/">Sololearn HTML</a>
+    </li>
+    <li class="list-links__item">
+      <a class="list-links__link"
+         href="https://www.sololearn.com/Certificate/1023-2013511/pdf/">Sololearn CSS</a>
+    </li>
+    <li class="list-links__item">
+      <a class="list-links__link"
+         href="https://www.sololearn.com/Certificate/1024-2013511/pdf/">Sololearn JavaScript</a>
+    </li>
+    <li class="list-links__item">
+      <a class="list-links__link"
+         href="https://www.sololearn.com/Certificate/1082-2013511/pdf/">Sololearn jQuery</a>
+    </li>
+    <li class="list-links__item">
+      <a class="list-links__link"
+         href="https://www.sololearn.com/Certificate/1073-2013511/pdf/">Sololearn Python 3</a>
+    </li>
+    <li class="list-links__item">
+      <a class="list-links__link"
+         href="https://stepik.org/certificate/0cc5c5a9eb71ad1cd6966dd7be8add60381a22cc.pdf">Stepik Python: основы и применение </a>
+    </li>
+    <li class="list-links__item">
+      <a class="list-links__link"
+         href="https://stepik.org/certificate/6e33cf49d5de4cad3d7e7a6e3b72633af5d0bda6.pdf">Stepik Программирование на Python</a>
+    </li>
+  </ul>
+  
+  <h2 class="main__title">Связаться со мной</h2>
+  <ul class="list-links main__description">
+    <li class="list-links__item">
+      <a class="list-links__link" href="https://vk.com/lord_welheor">Вконтакте</a>
+    </li>
+    <li class="list-links__item">
+      <a class="list-links__link" href="mailto:ap@somemail.com">RevaSA95@gmail.com</a>
+    </li>
+  </ul>
+  
+  <h2 class="main__title">Различные аккаунты</h2>
+  <ul class="list-links main__description">
+    <li class="list-links__item">
+      <a class="list-links__link" href="https://github.com/LordWelheor">Github</a>
+    </li>
+    <li class="list-links__item">
+      <a class="list-links__link" href="https://htmlacademy.ru/profile/id106318">HtmlAcademy</a>
+    </li>
+    <li class="list-links__item">
+      <a class="list-links__link" href="https://ru.hexlet.io/u/lordwelheor">Hexlet</a>
+    </li>
+    <li class="list-links__item">
+      <a class="list-links__link" href="https://stepik.org/users/19843719">Stepik</a>
+    </li>
+  </ul>
+  
+  <h2 class="main__title">gh-pages</h2>
+  <ul class="list-links main__description">
+    <li class="list-links__item">
+      <a class="list-links__link" href="https://lordwelheor.github.io/the_shop/">7h3 5h0p</a>
+    </li>
+  </ul>
 </main>
 </body>
 </html>
-
-
-
-
